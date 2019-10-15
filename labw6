@@ -1,0 +1,31 @@
+// odd even.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+##include<iostream>
+#include"pch.h"
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int num;
+	char addNum;
+	cout << "Press Y to start. ";
+	cin >> addNum;
+	while (addNum == 'Y' | addNum == 'y')
+	{
+		cout << "\nEnter number: ";
+		cin >> num;
+		if (num % 2 == 0)
+		{
+			cout << "The number entered is an even number. " << endl;
+		}
+		else
+		{
+			cout << "The number entered is an odd number. " << endl;
+		}
+		cout << "\nDo you wish to enter another number? Press Y for yes. ";
+		cin >> addNum;
+	}
+}
+
